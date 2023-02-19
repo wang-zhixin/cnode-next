@@ -53,7 +53,7 @@ export default function Topics() {
   const router = useRouter()
   const { page = 1, tab = '' } = router.query
 
-  const { data: result, error, isLoading } = useSWR<{ data: TopIcsItem[] }>(`https://cnodejs.org/api/v1/topics?page=${page}&limit=${30}&tab=${tab}`)
+  const { data: result, error, isLoading } = useSWR<{ data: TopIcsItem[] }>(`https://cnodejs11.org/api/v1/topics?page=${page}&limit=${30}&tab=${tab}`)
   console.log(result, 'result')
 
   return (
