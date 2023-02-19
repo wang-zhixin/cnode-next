@@ -20,7 +20,6 @@ export default function Topic({ topic }: { topic: TopicType }) {
         </div>
         {/* 内容 */}
         <div>
-          {/* {topic.content} */}
           <div
             className='p-4'
             dangerouslySetInnerHTML={{ __html: topic.content }}

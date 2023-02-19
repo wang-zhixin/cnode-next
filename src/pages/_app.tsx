@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps<{ fallback: any }
   dayjs.extend(relativeTime)
 
   return (
-    <SWRConfig value={{ refreshInterval: 3000, fetcher }}>
+    <SWRConfig value={{ fetcher, revalidateOnFocus: true }}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
