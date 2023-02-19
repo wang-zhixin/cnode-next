@@ -1,3 +1,5 @@
+export type Tab = '' | 'ask' | 'share' | 'job' | 'good'
+
 /*Author*/
 export type Author = {
 	loginname: string
